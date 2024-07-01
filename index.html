@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOULO</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin-top: 200px;
+      margin: 0 auto;
+      padding: 50px;
+      /* text-align: left; Align content to the left */
+    }
+    h1 {
+      color: white;
+    }
+    .logo {
+      margin-top: 150px;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px; /* Added height for even circle */
+      border-radius: 50%; /* Make the image a circle */
+    }
+    .coming-soon {
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 50px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out infinite alternate;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <video src="watchvideo1.mp4" autoplay loop muted></video>
+  <div class="container">
+    <img src="soulo.jpg" alt="SOULO Image" class="logo">
+    <div class="coming-soon"><h1>Coming Soon...</h1></div>
+  </div>
+</body>
+</html>
